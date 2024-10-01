@@ -126,16 +126,54 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 - Formato: SVG
 ```
 
-<u> 2.  </u>
+<u> 2. Mobile Ticket </u>
 
-![Imagem1](assets/svg/sign_up_welcome.svg)
+![Imagem1](assets/images/rmtc/tickets_with_background.png)
 
 ```
-- Dimensões: 361x433 pixels
-- Formato: SVG
-- Uso
+- Dimensões: 306x252 pixels
+- Formato: PNG com fundo transparente
+- Uso: Tela que mostra que a funcionalidade de mobile ticketing estará disponível em breve.
 ```
 
+
+<u> 3. Account-based Ticketing </u>
+
+![Imagem1](assets/images/rmtc/wallet_with_background.png)
+
+```
+- Dimensões: 329x224 pixels
+- Formato: PNG com fundo transparente
+- Uso: Tela que mostra que a funcionalidade de ABT estará disponível em breve.
+```
+
+<u> 4. Permissão de Uso da Localização </u>
+
+![Imagem1](assets/images/rmtc/location_permission.png)
+
+```
+- Dimensões: 329x224 pixels
+- Formato: PNG com fundo transparente
+- Uso: Tela de solicitação de permissão para uso da localização.
+```
+
+<u> 5. Permissão de Envio de Notificações </u>
+
+![Imagem1](assets/images/rmtc/notification_permission.png)
+
+```
+- Formato: PNG com fundo transparente
+- Uso: Tela de solicitação de permissão para envio de notificações.
+```
+
+<u> 5. Permissão de Envio de Notificações </u>
+
+![Imagem1](assets/images/rmtc/notification_permission.png)
+
+```
+- Formato: PNG com fundo transparente
+- Uso: Tela de solicitação de permissão para envio de notificações.
+```
 
 ## Marcadores de Mapas
 
@@ -154,7 +192,7 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 
 ```
 - Dimensões: 48x48 pixels
-- Formato: PNGG
+- Formato: PNG
 ```
 
 <u> 3. Ponto de Parada Favoritado </u>
@@ -183,3 +221,27 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 - Dimensões: 48x48 pixels
 - Formato: PNG
 ```
+
+--- 
+
+
+## Animações
+
+<u>1. Loading </u>
+
+<!-- Incluindo a biblioteca lottie-web -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+
+<!-- Contêiner para a animação Lottie -->
+<div id="lottie-container" style="width: 300px; height: 300px;"></div>
+
+<script>
+  // Inicializando a animação Lottie
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-container'), // ID do contêiner
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/animations/loading_rmtc.json' // Caminho para o arquivo JSON da animação
+  });
+</script>
