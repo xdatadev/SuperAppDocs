@@ -12,6 +12,7 @@
 4. [Imagens Personalizáveis](#imagens-personalizáveis)
 5. [Marcadores de Mapas](#marcadores-de-mapas)
 6. [Animações](#animações)
+7. [Templates Email](#templates-email)
 
 ---
 
@@ -126,7 +127,7 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 - Formato: SVG
 ```
 
-<u> 2. Mobile Ticket </u>
+<u> 2. Mobile Ticketing </u>
 
 ![Imagem1](assets/images/rmtc/tickets_with_background.png)
 
@@ -162,18 +163,38 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ![Imagem1](assets/images/rmtc/notification_permission.png)
 
 ```
+- Dimensões: 329x224 pixels
 - Formato: PNG com fundo transparente
 - Uso: Tela de solicitação de permissão para envio de notificações.
 ```
 
-<u> 5. Permissão de Envio de Notificações </u>
+<u> 6. Logo do Assistente Virtual </u>
 
-![Imagem1](assets/images/rmtc/notification_permission.png)
+![Imagem1](assets/svg/ai_logo.svg)
+
+```
+- Formato: PNG com fundo transparente
+- Uso: Tela de chat com o assistente virtual.
+```
+
+<u> 7. Lista Vazia de Cartões de Transporte </u>
+
+![Imagem1](assets/svg/transport_card_empty.svg)
+
+```
+- Formato: PNG com fundo transparente
+- Uso: Imagem que é mostrada quando o usuário não tem nenhum cartão adicionado.
+```
+
+<u> 8. Nenhum Ponto de Parada Favoritado </u>
+
+![Imagem1](assets/images/rmtc/empty_favorites_point.png)
 
 ```
 - Formato: PNG com fundo transparente
 - Uso: Tela de solicitação de permissão para envio de notificações.
 ```
+
 
 ## Marcadores de Mapas
 
@@ -222,8 +243,7 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 - Formato: PNG
 ```
 
---- 
-
+---
 
 ## Animações
 
@@ -245,3 +265,62 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
     path: 'assets/animations/loading_rmtc.json' // Caminho para o arquivo JSON da animação
   });
 </script>
+
+```
+- Formato: JSON (Lottie)
+- Uso: Sempre que há uma espera para carregamento ou processamento de alguma informação.
+```
+
+
+<u>2. Sucesso na Solicitação </u>
+
+<!-- Incluindo a biblioteca lottie-web -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+
+<!-- Contêiner para a animação Lottie -->
+<div id="lottie-container" style="width: 300px; height: 300px;"></div>
+
+<script>
+  // Inicializando a animação Lottie
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-container'), // ID do contêiner
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/animations/step_completed.json' // Caminho para o arquivo JSON da animação
+  });
+</script>
+
+```
+- Formato: JSON (Lottie)
+- Uso: Animação para casos de sucesso.
+```
+
+<u>3. Captura de Áudio </u>
+
+<!-- Incluindo a biblioteca lottie-web -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+
+<!-- Contêiner para a animação Lottie -->
+<div id="lottie-container" style="width: 300px; height: 300px;"></div>
+
+<script>
+  // Inicializando a animação Lottie
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-container'), // ID do contêiner
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/animations/wave.json' // Caminho para o arquivo JSON da animação
+  });
+</script>
+
+```
+- Formato: JSON (Lottie)
+- Uso: Captura de áudio por parte do assistente virtual
+```
+
+---
+
+## Templates Email
+
