@@ -297,7 +297,7 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ```
 
 <u>3. Captura de Áudio </u>
-
+<br><br><br><br>
 <!-- Incluindo a biblioteca lottie-web -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 
