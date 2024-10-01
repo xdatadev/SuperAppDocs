@@ -123,7 +123,6 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ![Imagem1](assets/svg/sign_up_welcome.svg)
 
 ```
-- Dimensões: 361x433 pixels
 - Formato: SVG
 ```
 
@@ -132,7 +131,6 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ![Imagem1](assets/images/rmtc/tickets_with_background.png)
 
 ```
-- Dimensões: 306x252 pixels
 - Formato: PNG com fundo transparente
 - Uso: Tela que mostra que a funcionalidade de mobile ticketing estará disponível em breve.
 ```
@@ -143,7 +141,6 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ![Imagem1](assets/images/rmtc/wallet_with_background.png)
 
 ```
-- Dimensões: 329x224 pixels
 - Formato: PNG com fundo transparente
 - Uso: Tela que mostra que a funcionalidade de ABT estará disponível em breve.
 ```
@@ -153,7 +150,6 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ![Imagem1](assets/images/rmtc/location_permission.png)
 
 ```
-- Dimensões: 329x224 pixels
 - Formato: PNG com fundo transparente
 - Uso: Tela de solicitação de permissão para uso da localização.
 ```
@@ -163,7 +159,6 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ![Imagem1](assets/images/rmtc/notification_permission.png)
 
 ```
-- Dimensões: 329x224 pixels
 - Formato: PNG com fundo transparente
 - Uso: Tela de solicitação de permissão para envio de notificações.
 ```
@@ -278,12 +273,12 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 
 <!-- Contêiner para a animação Lottie -->
-<div id="lottie-container" style="width: 300px; height: 300px;"></div>
+<div id="lottie-container2" style="width: 300px; height: 300px;"></div>
 
 <script>
   // Inicializando a animação Lottie
   lottie.loadAnimation({
-    container: document.getElementById('lottie-container'), // ID do contêiner
+    container: document.getElementById('lottie-container2'), // ID do contêiner
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -297,17 +292,16 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 ```
 
 <u>3. Captura de Áudio </u>
-<br><br><br><br>
 <!-- Incluindo a biblioteca lottie-web -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 
 <!-- Contêiner para a animação Lottie -->
-<div id="lottie-container" style="width: 300px; height: 300px;"></div>
+<div id="lottie-container3" style="width: 300px; height: 300px;"></div>
 
 <script>
   // Inicializando a animação Lottie
   lottie.loadAnimation({
-    container: document.getElementById('lottie-container'), // ID do contêiner
+    container: document.getElementById('lottie-container3'), // ID do contêiner
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -319,8 +313,307 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 - Formato: JSON (Lottie)
 - Uso: Captura de áudio por parte do assistente virtual
 ```
-
+ 
 ---
 
 ## Templates Email
 
+<u> Email de Boas Vindas </u>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email Validation</title>
+        <style type="text/css" rel="stylesheet" media="all">
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+            *,
+            *:after,
+            *:before {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: "Inter", Helvetica, Arial, sans-serif;
+            }
+
+            .hcenter {
+                margin: 0 auto 0 auto;
+            }
+
+            .box {
+                background: #F7F9FC;
+                width: 40%;
+                max-width: 600px;
+                margin: 0 auto 0 auto;
+            }
+
+            @media only screen and (max-width: 768px) {
+                .box {
+                    width: 100%;
+                }
+            }
+
+            .title {
+                display: flex;
+                background: #7272CF;
+                width: 100%;
+                height: 80px;
+                padding: 0 20px;
+            }
+
+            .sub-title {
+                padding: 30px 25px;
+                margin-top: 20px;
+            }
+
+            .thanks {
+                color: #343949;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22.5px;
+                margin: 20px auto 0;
+            }
+
+            .confirm {
+                color: #343949;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 30px;
+                margin: 0 auto 0;
+            }
+
+            .main {
+                background: #FBFCFE;
+                padding: 25px;
+            }
+
+            .hello {
+                color: #343949;
+                font-weight: 500;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .forgot {
+                color: #343949;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 40px;
+            }
+
+            .message {
+                color: #343949;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                text-align: justify;
+                margin-bottom: 30px;
+            }
+
+            .btn {
+                display: block;
+                color: #fff;
+                background: #7675D3;
+                border-radius: 7px;
+                text-align: center;
+                text-decoration: none;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+                padding: 15px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 16.56px;
+                width: 270px;
+                height: 48px;
+                margin: 0 auto 40px auto;
+            }
+
+            .btn:hover {
+                background: #6968bb;
+            }
+
+            .main-thanks {
+                color: #343949;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 5px;
+            }
+
+            .sam {
+                color: #72788D;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 30px;
+            }
+
+            .footer {
+                padding: 25px;
+            }
+
+            .download-app {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px;
+                color: #343949;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .store {
+                display: flex;
+                margin-bottom: 10px;
+            }
+
+            .contact {
+                color: #343949;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .email {
+                color: #343949;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 24px;
+                margin-bottom: 5px;
+                text-decoration: none;
+            }
+
+            .email:hover {
+                color: #72788D;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .div-instagram {
+                display: flex;
+                margin: 0 0 25px 0;
+                text-decoration: none;
+            }
+
+            .div-instagram p {
+                font-weight: 400;
+                font-size: 10px;
+                color: #343949;
+            }
+
+            .div-instagram p:hover {
+                text-decoration: underline;
+            }
+
+            .div-descadastro {
+                display: flex;
+            }
+
+            .div-descadastro p {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 24px;
+                color: #72788D;
+            }
+
+            .div-descadastro a {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 24px;
+                color: #343949;
+            }
+
+            .div-descadastro a:hover {
+                color: #72788D;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+
+    <body style="width: 100% !important; height: 100%; background-color: #c4c7cd; overflow-y: auto; padding: 15px;">
+
+        <div class="box">
+
+            <div class="title">
+                <a href="{{site_url}}" style="margin-top: auto; margin-bottom: auto;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/siacbancohoras.appspot.com/o/public%2FSam_Logo.png?alt=media&token=932b5206-50ee-4014-bf59-37c424144762"
+                        alt="SAM logo">
+                </a>
+                <a href="{{instagram_url}}" style="margin-left: auto; margin-top: auto; margin-bottom: auto;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/siacbancohoras.appspot.com/o/public%2FInstagram.png?alt=media&token=af68bc83-2d3d-436f-841c-7f6054ba9ad6"
+                        alt="social media">
+                </a>
+            </div>
+
+            <div class="sub-title">
+                <p class="forgot">Esqueceu sua senha?</p>
+                <center>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/siacbancohoras.appspot.com/o/public%2FGroup.png?alt=media&token=eec5532e-6344-4c2f-8993-e420df614fd7"
+                        alt="forgot password" width="93px" height="93px">
+                </center>
+            </div>
+
+            <div class="main">
+                <p class="hello">Olá, {{name}}</p>
+                <p class="message">Parece que você esqueceu sua senha de acesso ao SAM. Se isso for verdade, por favor, retorne ao aplicativo e insira
+                    o código abaixo.</p>
+                <p style="color: #343949; font-size: 36px; text-align: center; margin-bottom: 20px; font-weight: 600;">{{code}}</p>
+                <hr style="margin: 15px 0 15px 0; border-top: 1px solid #E0E0E0;" />
+                <p style="color: #72788D; margin: 15px 0 20px 0;">Se você não solicitou a alteração de senha, por favor, ignore este e-mail. Sua senha
+                    não será alterada a menos que você solicite a redefinição da mesma.</p>
+                <p class="main-thanks">Obrigado,</p>
+                <p class="sam">Equipe SAM</p>
+            </div>
+            <div class="footer">
+                <center>
+
+                    <a href="{{site_url}}">
+                        <img width="70px" height="24px"
+                            src="https://firebasestorage.googleapis.com/v0/b/siacbancohoras.appspot.com/o/public%2FSam_Logo_black.png?alt=media&token=c6aa007a-4af7-4546-9990-108a7cb4abe6"
+                            alt="sam logo black" />
+                    </a>
+
+                    <p class="download-app">Baixe o aplicativo</p>
+
+                    <div class="store">
+                        <a href="{{apple_store_url}}" style="margin-left: auto;">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/siacbancohoras.appspot.com/o/public%2FApple%20Play%20Badge.png?alt=media&token=e939ff17-60ed-4e49-82a4-e141161ffafe"
+                                alt="apple store image">
+                        </a>
+
+                        <a href="{{play_store_url}}" style="margin-right: auto;">
+                            <img width="108px" height="32px" style="margin-left: 20px;"
+                                src="https://firebasestorage.googleapis.com/v0/b/siacbancohoras.appspot.com/o/public%2FGoogle%20Play%20Badge.png?alt=media&token=9c9d5d10-5545-4a95-8de5-3bcb6079f9eb"
+                                alt="google play store " />
+                        </a>
+                    </div>
+
+                    <p class="contact">Contatos</p>
+                    <a href="mailto:{{contact_email}}" class="email">{{contact_email}}</a>
+
+                    <a href="{{instagram_url}}" class="div-instagram">
+                        <p style="margin: auto 0 auto auto;">Instagram</p>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/siacbancohoras.appspot.com/o/public%2Finstagram-fill.png?alt=media&token=52993b67-29cd-4ab0-9442-e933fa732001"
+                            alt="instagram fill" style="margin: 0 auto 0 5px;">
+                    </a>
+
+                    <div class="div-descadastro">
+                        <p style="margin-left: auto;">Não deseja receber mais nossos e-mails?</p>
+                        <a href="#" style="margin: 0 auto 0 3px;">Descadastrar</a>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+    </body>
+
+</html>
