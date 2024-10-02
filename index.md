@@ -318,10 +318,14 @@ Aqui deve ser feita uma descrição sucinta da funcionalidade.
 
 ## Templates Email
 
-<u> Email de Boas Vindas </u>
+<u>1. Email de Boas Vindas </u>
+
+
 [Preview do HTML](assets/html/welcome.html)
 
 
 
 <u>2. Esqueceu a sua senha</u>
+
+
 [Preview do HTML](assets/html/forgotpassword.html)
